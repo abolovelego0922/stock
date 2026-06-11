@@ -598,7 +598,17 @@ export default function App() {
   const zeroLineY = chartHeight - padding - ((0 - minProfit) / profitRange) * (chartHeight - padding * 2)
 
   return (
-    <div style={{ padding: '15px', fontFamily: 'sans-serif', backgroundColor: '#111827', color: '#fff', minHeight: '100vh', maxWidth: '500px', width: '100%', margin: '0 auto', boxSizing: 'border-box' }}>
+    <div style={{ 
+  width: '100%', 
+  maxWidth: '460px',      /* 👈 關鍵：手機版的黃金舒適寬度！防止卡片在大手機上被拉得太寬 */
+  margin: '0 auto',       /* 👈 關鍵：當螢幕比 460px 寬時，自動讓整個 App 居中 */
+  padding: '16px',        /* 👈 關鍵：左右留出一致的內邊距，元件就不會死貼著手機玻璃邊緣 */
+  fontFamily: 'sans-serif', 
+  backgroundColor: '#111827', 
+  color: '#fff', 
+  minHeight: '100vh', 
+  boxSizing: 'border-box' 
+}}>
       
       {/* 帳號控制列 */}
       <div style={{ display: 'flex', gap: '8px', backgroundColor: '#1f2937', padding: '10px', borderRadius: '8px', marginBottom: '12px', alignItems: 'center', flexWrap: 'wrap' }}>
