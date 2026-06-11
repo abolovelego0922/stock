@@ -598,7 +598,7 @@ export default function App() {
   const zeroLineY = chartHeight - padding - ((0 - minProfit) / profitRange) * (chartHeight - padding * 2)
 
   return (
-    <div style={{ padding: '15px 0', fontFamily: 'sans-serif', backgroundColor: '#111827', color: '#fff', minHeight: '100vh', width: '100%', boxSizing: 'border-box' }}>
+    <div style={{ padding: '15px', fontFamily: 'sans-serif', backgroundColor: '#111827', color: '#fff', minHeight: '100vh', width: '100%', boxSizing: 'border-box' }}>
       
       {/* 帳號控制列 */}
       <div style={{ display: 'flex', gap: '8px', backgroundColor: '#1f2937', padding: '10px', borderRadius: '8px', marginBottom: '12px', alignItems: 'center', flexWrap: 'wrap' }}>
